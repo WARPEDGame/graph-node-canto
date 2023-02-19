@@ -19,8 +19,9 @@ services:
       postgres_pass: let-me-in
       postgres_db: graph-node
       ipfs: 'ipfs:5001'
-      ethereum: 'mainnet:http://host.docker.internal:8545'
+      ethereum: 'mainnet:https://canto.gravitychain.io/'
       GRAPH_LOG: info
+      GRAPH_ETHEREUM_GENESIS_BLOCK_NUMBER: 3000000
   ipfs:
     image: ipfs/go-ipfs:v0.10.0
     ports:
